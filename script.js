@@ -28,7 +28,7 @@ theme.addEventListener('click', () => {
 
 function rendor(country){
     const card = document.createElement('a');
-        card.href = `/country.html?name=${country.name.common}`
+        card.href = `https://naveen-1105.github.io/Countries/country.html?name=${country.name.common}`
         card.classList.add('card');
         card.innerHTML = `
         <img src="${country.flags.svg}" alt="">
