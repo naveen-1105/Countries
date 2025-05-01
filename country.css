@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+    font-weight: 800px;
+    text-decoration: none;
+}
+h2 a{
+    color: var(--text-color);
+}
+.header{
+    max-width: 1300px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.headerContainer{
+    box-shadow: 0px 0px 10px 0px rgb(22, 22, 22);
+    margin-bottom: 10px;
+}
+.theme{
+    cursor: pointer;
+}
+body{
+    --background-color :  aliceblue;
+    --text-color : black;
+    --elements-color: white;
+    background-color:var(--background-color); 
+    color: var(--text-color);
+}
+body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --text-color : hsl(0, 0%, 100%);
+    --elements-color:  hsl(209, 23%, 22%);
+}
+main{
+    min-height: 100vh;
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    
+}
+.back{
+    width: 100px;
+    height: auto;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgb(22, 22, 22);
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--elements-color);
+}
+.country{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding-top: 80px;
+}
+.flag{
+    width: 50%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.flag img{
+    width: 100%; 
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    display: flex;
+}
+.details{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.detail1{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.detail2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.nativeCountries{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 20px;
+
+}
+.nativeCountries p{
+    padding-bottom: 10px;
+}
+.nativeCountries a{
+    width: auto;
+    height: auto;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgb(22, 22, 22);
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-inline: 5px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
+}
+@media(max-width : 800px){
+    .header h2{
+        font-size: 20px;
+    }
+    .header p{
+        font-size: 14px;
+    }
+    .country{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .flag{
+        width: 100%;
+    }
+    .left{
+        padding: 0px;
+        padding-bottom: 40px;
+    }
+    .left h1{
+        padding-block: 30px 10px;
+    }
+    .details{
+        flex-direction: column;
+    }
+}
