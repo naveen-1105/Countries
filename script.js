@@ -42,7 +42,7 @@ function rendor(country){
 cardContainer.append(card)
 }
 let allCountryData = []
-fetch('https://restcountries.com/v3.1/all').then((res) => res.json())
+fetch('https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region,subregion,borders,currencies,languages').then((res) => res.json())
 .then((data) => {
     
     data.forEach((country) =>{
